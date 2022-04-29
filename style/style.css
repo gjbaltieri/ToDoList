@@ -11,6 +11,8 @@ h1 {color: #f8f7ff;
     text-align: center;
 padding: 10px;}
 body {background: rgb(138,99,223);
+    background-repeat: no-repeat;
+    background-size: cover;
     background: radial-gradient(circle, rgba(138,99,223,1) 0%, rgba(68,95,189,1) 100%);}
 
 #conteudo {width: 90%;
@@ -72,12 +74,6 @@ li:nth-child(odd) {
 
 }
 
-
-.concluido {
-    text-decoration: line-through;
-}
-
-
 .icon {
 
 
@@ -98,3 +94,27 @@ color: white
 }
 
       
+@media screen and (max-width: 800px) {
+    body {background: rgb(104, 96, 255);
+    }
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: 180px;
+    border-radius: 10px;
+    background-color: var(--bgcolor);
+    margin: 30px auto 30px auto;}
+    
+#input {width: 90%;
+    height: 20%;
+    margin: 20px;
+    border: 0;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 10px;}
+}}}
